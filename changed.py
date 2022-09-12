@@ -58,20 +58,20 @@ def minmaxerr(x,xerr):
     x_max=x[i_x_max]+xerr[i_x_max]
     return x_min,x_max
 
-def offset_reset(x1,xerr1,y1,yerr1,x2,xerr2,y2,yerr2):
-    x_min1,x_max1 = minmaxerr(x1,xerr1)
-    x_min2,x_max2 = minmaxerr(x2,xerr2)
-    x_min_shared = max(x_min1,x_min2)    
-    x_max_shared = min(x_max1,x_max2)
+# def offset_reset(x1,xerr1,y1,yerr1,x2,xerr2,y2,yerr2):
+#     x_min1,x_max1 = minmaxerr(x1,xerr1)
+#     x_min2,x_max2 = minmaxerr(x2,xerr2)
+#     x_min_shared = max(x_min1,x_min2)    
+#     x_max_shared = min(x_max1,x_max2)
     
-    indx_shared1=np.where((x1>=x_min_shared)&(x1<=x_max_shared))
-    median1=np.median(y1[indx_shared1])
-    indx_shared2=np.where((x2>=x_min_shared)&(x2<=x_max_shared))
-    median2=np.median(y2[indx_shared2])
+#     indx_shared1=np.where((x1>=x_min_shared)&(x1<=x_max_shared))
+#     median1=np.median(y1[indx_shared1])
+#     indx_shared2=np.where((x2>=x_min_shared)&(x2<=x_max_shared))
+#     median2=np.median(y2[indx_shared2])
     
-    offset = median1-median2 #how much move dataset 2 with respect to dataset 1
+#     offset = median1-median2 #how much move dataset 2 with respect to dataset 1
     
-    return offset
+#     return offset
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,12 +88,12 @@ path='/home/moon/kmolaverdi/pRT/retrieval/W39b_NS_systematic/data/'
 
 file_LBT = path+'w39_prism_firefly_trans_spec_20July2022_v1.txt'
 data = np.genfromtxt(file_LBT,skip_header=1)
-wl_obs_LBT,r_ratio_obs_LBT, dwl_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
+wl_obs_LBT, dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
 
-x1 = wl_obs_LBT
-xerr1 = dwl_obs_LBT/2.
-y1 = r_ratio_obs_LBT
-yerr1 = dr_ratio_obs_LBT
+x = wl_obs_LBT
+xerr = dwl_obs_LBT/2.
+y = r_ratio_obs_LBT
+yerr = dr_ratio_obs_LBT
 # yerr1=abs(2.*r_ratio_obs_LBT*yerr1)
 # x=x1
 # xerr=xerr1
