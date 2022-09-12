@@ -100,66 +100,66 @@ yerr = dr_ratio_obs_LBT
 # y=y1
 # yerr=yerr1
 
-file_LBT = path+'W39_HST_Fischer2016.txt'
-data = np.genfromtxt(file_LBT,skip_header=1)
-wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
+# file_LBT = path+'W39_HST_Fischer2016.txt'
+# data = np.genfromtxt(file_LBT,skip_header=1)
+# wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
 
-x2 = wl_obs_LBT
-xerr2 = dwl_obs_LBT#/2.
-y2 = r_ratio_obs_LBT
-yerr2 = dr_ratio_obs_LBT
+# x2 = wl_obs_LBT
+# xerr2 = dwl_obs_LBT#/2.
+# y2 = r_ratio_obs_LBT
+# yerr2 = dr_ratio_obs_LBT
 
-offset1=1.70544308e-04
+# offset1=1.70544308e-04
 
-# offset1 = offset_reset(x1,xerr1,y1,yerr1,x2,xerr2,y2,yerr2)
-
-
-
-file_LBT = path+'W39_Spitzer_Fischer2016.txt'
-data = np.genfromtxt(file_LBT,skip_header=1)
-wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
-
-x3 = wl_obs_LBT
-xerr3 = dwl_obs_LBT#/2.
-y3 = r_ratio_obs_LBT
-yerr3 = dr_ratio_obs_LBT
-
-offset2=2.33660385e-04
-
-# offset2 = offset_reset(x1,xerr1,y1,yerr1,x3,xerr3,y3,yerr3)
+# # offset1 = offset_reset(x1,xerr1,y1,yerr1,x2,xerr2,y2,yerr2)
 
 
 
-file_LBT = path+'W39_HST_Wakeford2018.txt'
-data = np.genfromtxt(file_LBT,skip_header=1)
-wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
+# file_LBT = path+'W39_Spitzer_Fischer2016.txt'
+# data = np.genfromtxt(file_LBT,skip_header=1)
+# wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
 
-x4 = wl_obs_LBT
-xerr4 = dwl_obs_LBT/2.
-y4 = r_ratio_obs_LBT
-yerr4 = dr_ratio_obs_LBT
+# x3 = wl_obs_LBT
+# xerr3 = dwl_obs_LBT#/2.
+# y3 = r_ratio_obs_LBT
+# yerr3 = dr_ratio_obs_LBT
 
-offset3=-5.07809485e-05
+# offset2=2.33660385e-04
 
-# # offset3 = offset_reset(x1,xerr1,y1,yerr1,x4,xerr4,y4,yerr4)
-
-# # x=np.concatenate((x,x4))
-# # xerr=np.concatenate((xerr,xerr4))
-# # y=np.concatenate((y,y4+offset3))
-# # yerr=np.concatenate((yerr,yerr4))
+# # offset2 = offset_reset(x1,xerr1,y1,yerr1,x3,xerr3,y3,yerr3)
 
 
 
-file_LBT = path+'W39_FORS2_Nikolov2016.txt'
-data = np.genfromtxt(file_LBT,skip_header=1)
-wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
+# file_LBT = path+'W39_HST_Wakeford2018.txt'
+# data = np.genfromtxt(file_LBT,skip_header=1)
+# wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
 
-x5 = wl_obs_LBT
-xerr5 = dwl_obs_LBT#/2.
-y5 = r_ratio_obs_LBT
-yerr5 = dr_ratio_obs_LBT
+# x4 = wl_obs_LBT
+# xerr4 = dwl_obs_LBT/2.
+# y4 = r_ratio_obs_LBT
+# yerr4 = dr_ratio_obs_LBT
 
-offset4=1.31269673e-05
+# offset3=-5.07809485e-05
+
+# # # offset3 = offset_reset(x1,xerr1,y1,yerr1,x4,xerr4,y4,yerr4)
+
+# # # x=np.concatenate((x,x4))
+# # # xerr=np.concatenate((xerr,xerr4))
+# # # y=np.concatenate((y,y4+offset3))
+# # # yerr=np.concatenate((yerr,yerr4))
+
+
+
+# file_LBT = path+'W39_FORS2_Nikolov2016.txt'
+# data = np.genfromtxt(file_LBT,skip_header=1)
+# wl_obs_LBT,dwl_obs_LBT, r_ratio_obs_LBT, dr_ratio_obs_LBT  = data[:,0], data[:,1], data[:,2], data[:,3]
+
+# x5 = wl_obs_LBT
+# xerr5 = dwl_obs_LBT#/2.
+# y5 = r_ratio_obs_LBT
+# yerr5 = dr_ratio_obs_LBT
+
+# offset4=1.31269673e-05
 
 # offset4 = offset_reset(x1,xerr1,y1,yerr1,x5,xerr5,y5,yerr5)
 
@@ -188,67 +188,67 @@ offset4=1.31269673e-05
 
 
 # drop the observed points out of model wavelenght range       
-wln_dn=2.0
-wln_up=3.0                                 
-indx_wl_coverage = np.where((x1>=wln_dn)&(x1<=wln_up))
-x1 = x1[indx_wl_coverage]
-xerr1 = xerr1[indx_wl_coverage]
-y1 = y1[indx_wl_coverage]
-yerr1 = yerr1[indx_wl_coverage]
+wln_dn=2.2
+wln_up=5.5                                
+indx_wl_coverage = np.where((x>=wln_dn)&(x<=wln_up))
+x = x[indx_wl_coverage]
+xerr = xerr[indx_wl_coverage]
+y = y[indx_wl_coverage]
+yerr = yerr[indx_wl_coverage]
 
-indx_wl_coverage = np.where((x2>=wln_dn)&(x2<=wln_up))
-x2 = x2[indx_wl_coverage]
-xerr2 = xerr2[indx_wl_coverage]
-y2 = y2[indx_wl_coverage]
-yerr2 = yerr2[indx_wl_coverage]
+# indx_wl_coverage = np.where((x2>=wln_dn)&(x2<=wln_up))
+# x2 = x2[indx_wl_coverage]
+# xerr2 = xerr2[indx_wl_coverage]
+# y2 = y2[indx_wl_coverage]
+# yerr2 = yerr2[indx_wl_coverage]
 
-indx_wl_coverage = np.where((x3>=wln_dn)&(x3<=wln_up))
-x3 = x3[indx_wl_coverage]
-xerr3 = xerr3[indx_wl_coverage]
-y3 = y3[indx_wl_coverage]
-yerr3 = yerr3[indx_wl_coverage]
+# indx_wl_coverage = np.where((x3>=wln_dn)&(x3<=wln_up))
+# x3 = x3[indx_wl_coverage]
+# xerr3 = xerr3[indx_wl_coverage]
+# y3 = y3[indx_wl_coverage]
+# yerr3 = yerr3[indx_wl_coverage]
 
-indx_wl_coverage = np.where((x4>=wln_dn)&(x4<=wln_up))
-x4 = x4[indx_wl_coverage]
-xerr4 = xerr4[indx_wl_coverage]
-y4 = y4[indx_wl_coverage]
-yerr4 = yerr4[indx_wl_coverage]
+# indx_wl_coverage = np.where((x4>=wln_dn)&(x4<=wln_up))
+# x4 = x4[indx_wl_coverage]
+# xerr4 = xerr4[indx_wl_coverage]
+# y4 = y4[indx_wl_coverage]
+# yerr4 = yerr4[indx_wl_coverage]
 
-indx_wl_coverage = np.where((x5>=wln_dn)&(x5<=wln_up))
-x5 = x5[indx_wl_coverage]
-xerr5 = xerr5[indx_wl_coverage]
-y5 = y5[indx_wl_coverage]
-yerr5 = yerr5[indx_wl_coverage]
-
-
-
-# print(len(x1),len(y1))
-# print(len(x2),len(y2))
-# print(len(x3),len(y3))
-# print(len(x4),len(y4))
-# print(len(x5),len(y5))
+# indx_wl_coverage = np.where((x5>=wln_dn)&(x5<=wln_up))
+# x5 = x5[indx_wl_coverage]
+# xerr5 = xerr5[indx_wl_coverage]
+# y5 = y5[indx_wl_coverage]
+# yerr5 = yerr5[indx_wl_coverage]
 
 
 
-x=np.concatenate((x1,x2))
-xerr=np.concatenate((xerr1,xerr2))
-# y=np.concatenate((y1,y2+offset1))
-yerr=np.concatenate((yerr1,yerr2))
+# # print(len(x1),len(y1))
+# # print(len(x2),len(y2))
+# # print(len(x3),len(y3))
+# # print(len(x4),len(y4))
+# # print(len(x5),len(y5))
 
-x=np.concatenate((x,x3))
-xerr=np.concatenate((xerr,xerr3))
-# y=np.concatenate((y,y3+offset2))
-yerr=np.concatenate((yerr,yerr3))
 
-x=np.concatenate((x,x4))
-xerr=np.concatenate((xerr,xerr4))
-# y=np.concatenate((y,y4))
-yerr=np.concatenate((yerr,yerr4))
 
-x=np.concatenate((x,x5))
-xerr=np.concatenate((xerr,xerr5))
-# y=np.concatenate((y,y5+offset4))
-yerr=np.concatenate((yerr,yerr5))
+# x=np.concatenate((x1,x2))
+# xerr=np.concatenate((xerr1,xerr2))
+# # y=np.concatenate((y1,y2+offset1))
+# yerr=np.concatenate((yerr1,yerr2))
+
+# x=np.concatenate((x,x3))
+# xerr=np.concatenate((xerr,xerr3))
+# # y=np.concatenate((y,y3+offset2))
+# yerr=np.concatenate((yerr,yerr3))
+
+# x=np.concatenate((x,x4))
+# xerr=np.concatenate((xerr,xerr4))
+# # y=np.concatenate((y,y4))
+# yerr=np.concatenate((yerr,yerr4))
+
+# x=np.concatenate((x,x5))
+# xerr=np.concatenate((xerr,xerr5))
+# # y=np.concatenate((y,y5+offset4))
+# yerr=np.concatenate((yerr,yerr5))
 
 
 
