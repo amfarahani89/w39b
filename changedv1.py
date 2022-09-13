@@ -301,8 +301,8 @@ atmosphere = Radtrans(line_species = line_species, \
       continuum_opacities = continuum_opacities, \
       wlen_bords_micron = wlen_bords_micron)
 
-log_pressure_bords=[-6,1]
-pressures = np.logspace(log_pressure_bords[0], log_pressure_bords[1], 20) #<<<<<<<<<<<< increase nz for final run <<<<<<<<<
+log_pressure_bords=[-8,3]
+pressures = np.logspace(log_pressure_bords[0], log_pressure_bords[1], 100) #<<<<<<<<<<<< increase nz for final run <<<<<<<<<
 atmosphere.setup_opa_structure(pressures)
 
 
