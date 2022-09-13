@@ -282,14 +282,17 @@ x_max=x[i_x_max]+xerr[i_x_max]
 # ~~~~~~~~~~ Planetary Pararmeters ~~~~~~~~~~~~
 file_out = 'W39b'
 #https://docs.google.com/document/d/1zxvMoDXCeZOkr1RQWUFTR5KKf3iXFjpIXnKDzT2qxY0/edit
-Rs = 0.932*9.95 # in Jupiter radius #for transit
+Rs = 0.9324*9.95 # in Jupiter radius #for transit
 # # R_pl = 1.138*nc.r_jup_mean
-gravity = 2479.*(0.281)*(1.279)**-2. #put in (mass) and (radius)**-2 in Jupiuter unit
-
+#gravity = 2479.*(0.281)*(1.279)**-2. #put in (mass) and (radius)**-2 in Jupiuter unit
+##########################
+log_g = 2.63
+gravity = 1e1**log_g
 P0=0.01
+##########################
 
 # ~~~~~~~~~~ Atmosphere object Pararmeters ~~~~~~~~~~~~
-line_species=['H2O_Exomol','CO2']
+line_species=['H2O_Exomol','CO2','SO2', 'CO_all_iso_HITEMP','H2S']
 rayleigh_species=['H2', 'He']
 continuum_opacities=['H2-H2', 'H2-He']
 wlen_bords_micron=[x_min, x_max]
