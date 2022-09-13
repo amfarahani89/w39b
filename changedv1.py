@@ -526,11 +526,13 @@ def denormalize(value,val_min,val_max):
 def prior(cube, ndim, nparams):
     # log_abundances
     for i in range(len(line_species)):
-        cube[i]=cube[i]*-10. # uniform prior between -10:0
+    	low = -12
+    	up = -1
+    	cube[i]=denormalize(cube[i], low, up) # uniform prior between -12:-1
    
     # R_pl
-    low=0.5
-    up =1.5
+    low=0.8
+    up =1.6
     cube[len(line_species)] = denormalize(cube[len(line_species)],low,up)
 
     
