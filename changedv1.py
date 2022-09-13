@@ -620,8 +620,8 @@ start_time = time.time()
 # pool.close()
 
 
-nlive = 100 # number of live points
-pymultinest.run(lnlike, prior, n_params, outputfiles_basename=output_dir+'/'+prefix, resume = False, verbose = True,n_live_points=nlive)
+nlive = 400 # number of live points
+pymultinest.run(lnlike, prior, n_params, outputfiles_basename=output_dir+'/'+prefix, sampling_efficiency=0.1, resume = False, verbose = True,n_live_points=nlive)
 
 
 
