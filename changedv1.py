@@ -441,8 +441,8 @@ def ret_model(atmosphere,gravity,P0,params_i):
 
     log_abund_H2He = 1. - log_abund_non_H2
 
-    abundances['H2'] = np.ones_like(atmosphere.press)*log_abund_H2He*0.75
-    abundances['He'] = np.ones_like(atmosphere.press)*log_abund_H2He*0.25
+    abundances['H2'] = np.ones_like(atmosphere.press)*log_abund_H2He*0.766
+    abundances['He'] = np.ones_like(atmosphere.press)*log_abund_H2He*0.234
         
     R_pl     =      params_i[len(atmosphere.line_species)]*nc.r_jup_mean
     # kappa_IR = 10.**params_i[len(atmosphere.line_species)+1]
